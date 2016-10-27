@@ -1,3 +1,28 @@
 html {
   font-family: "Open-sans", sans-serif;
 }
+
+label {
+  display: block;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 15em;
+  font-size: 1.125rem;
+
+}
+
+textarea {
+  height: 5em;
+}
+
+button {
+  font-size: 1.125rem;
+  padding: 0.5em 0.75em;
+}

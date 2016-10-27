@@ -12,27 +12,53 @@
 </head>
 <body>
 
-  Want to go to Mars?
-  We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.
+  <form action"https://formspree.io/sunt0005@algonquinlive.com" method="post">
 
-  Personal details
-  Name
-  Age
-  Email
-  Physical fitness
-  - Super-human
-  - Fit as a fiddle
-  - Not terribly strong
-  - A little couch-potato-y
-  Address
+    <h1>Want to go to Mars?</h1>
+    <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    <h2>Personal details</h2>
 
-  Mission statement
-  Why do you want to go to Mars?
+    <div>
+      <label for="name">Name</label>
+        <input id="name">
+    </div>
 
-  Register for the trip!
+    <div>
+      <label for="age">Age</label>
+        <input id="age">
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+        <input id="email">
+    </div>
+
+    <div>
+      <label for="physicalfitness">Physical Fitness</label>
+      <select id="physicalfitness">
+        <option>Super-human</option>
+        <option>Fit as a fiddle</option>
+        <option>A little couch-potato-y</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="address">Address</label>
+      <textarea for="address"></textarea>
+    </div>
+
+    <h2>Mission statement</h2>
+
+    <div>
+      <label for="gotomars">Why do you want to go to Mars?</label>
+      <textarea for="message"></textarea>
+    </div>
+
+    <button class="btn" type="submit">Register for the trip!</button>
 
   Request to join the mission
 
-  
+  </form>
+
 </body>
 </html>
