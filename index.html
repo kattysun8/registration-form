@@ -12,31 +12,31 @@
 </head>
 <body>
 
-  <form class="max-length" action="https://formspree.io/sunt0005@algonquinlive.com" method="post">
+  <form class="max-length" action="https://formspree.io/sunt0005@algonquinlive.com" method="POST">
 
-    <h1>Want to go to Mars?</h1>
-    <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-    <h2>Personal details</h2>
+    <h1 class="pad-t-2 push-0 gutter">Want to go to Mars?</h1>
+    <p class="pad-t mega gutter">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    <h2 class="gutter normal italic giga push-1-2">Personal details</h2>
 
     <div class="grid">
-      <div class="unit xs-1 s-1 m-2 l-2 xl-2">
+      <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
         <label for="name">Name</label>
           <input id="name">
       </div>
 
-      <div class="unit xs-1 s-1 m-2 l-2 xl-2">
+      <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
         <label for="age">Age</label>
           <input id="age">
       </div>
 
-      <div class="unit xs-1 s-1 m-2 l-2 xl-2">
+      <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
         <label for="email">Email</label>
           <input id="email">
       </div>
 
-      <div class="unit xs-1 s-1 m-2 l-2 xl-2">
-        <label for="physicalfitness">Physical fitness</label>
-        <select id="physicalfitness">
+      <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
+        <label for="physical-fitness">Physical fitness</label>
+        <select id="physical-fitness">
           <option>Super-human</option>
           <option>Fit as a fiddle</option>
           <option>Not terribly strong</option>
@@ -45,24 +45,23 @@
       </div>
     </div>
 
-    <div>
+    <div class="push pad-t-1-4 gutter">
       <label for="address">Address</label>
-      <textarea for="address"></textarea>
+      <textarea id="address" rows="2" cols="40" name="address" for="address"></textarea>
     </div>
 
-    <h2>Mission statement</h2>
+    <h2 class="gutter normal italic giga push-1-2">Mission statement</h2>
 
-    <div>
-      <label for="gotomars">Why do you want to go to Mars?</label>
-      <textarea for="message"></textarea>
+    <div class="push gutter">
+      <label for="why-do-you-want-to-go-to-mars">Why do you want to go to Mars?</label>
+      <textarea id="why-do-you-want-to-go-to-mars" rows="2" cols="40" name="why-do-you-want-to-go-to-mars" for="message"></textarea>
     </div>
 
-    <button class="btn" type="submit">Register for the trip!</button>
-
-    <div>
-      <input id="message" value="Request to join the mission">
+    <div class="push-1 gutter center">
+      <button class="btn" type="submit">Register for the trip!</button>
     </div>
 
+    <input type="hidden" name="subject" value="Request to join the mission">
 
   </form>
 
