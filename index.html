@@ -8,7 +8,7 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
 </head>
 <body>
 
@@ -16,50 +16,55 @@
 
     <h1 class="pad-t-2 push-0 gutter">Want to go to Mars?</h1>
     <p class="pad-t mega gutter">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-    <h2 class="gutter normal italic giga push-1-2">Personal details</h2>
 
-    <div class="grid">
-      <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
-        <label for="name">Name</label>
+    <fieldset class="push-1-2">
+      <legend class="gutter normal italic giga push-1-2">Personal details</legend>
+
+      <div class="grid">
+        <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
+          <label for="name">Name</label>
           <input id="name">
-      </div>
+        </div>
 
-      <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
-        <label for="age">Age</label>
+        <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
+          <label for="age">Age</label>
           <input id="age">
-      </div>
+        </div>
 
-      <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
-        <label for="email">Email</label>
+        <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
+          <label for="email">Email</label>
           <input id="email">
+        </div>
+
+        <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
+          <label for="physical-fitness">Physical fitness</label>
+          <select id="physical-fitness">
+            <option>Super-human</option>
+            <option>Fit as a fiddle</option>
+            <option>Not terribly strong</option>
+            <option>A little couch-potato-y</option>
+          </select>
+        </div>
+
+        <div class="push pad-t-1-4 gutter">
+          <label for="address">Address</label>
+          <textarea id="address" rows="2" cols="40" name="address"></textarea>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="push-1">
+      <legend class="gutter normal italic giga push-1-2">Mission statement</legend>
+
+      <div class="push gutter">
+        <label for="why-do-you-want-to-go-to-mars">Why do you want to go to Mars?</label>
+        <textarea id="why-do-you-want-to-go-to-mars" rows="2" cols="40" name="why-do-you-want-to-go-to-mars"></textarea>
       </div>
 
-      <div class="unit xs-1 s-1 m-2 l-2 xl-2 push pad-t-1-4 gutter">
-        <label for="physical-fitness">Physical fitness</label>
-        <select id="physical-fitness">
-          <option>Super-human</option>
-          <option>Fit as a fiddle</option>
-          <option>Not terribly strong</option>
-          <option>A little couch-potato-y</option>
-        </select>
+      <div class="push-1 gutter center">
+        <button class="btn" type="submit">Register for the trip!</button>
       </div>
-    </div>
-
-    <div class="push pad-t-1-4 gutter">
-      <label for="address">Address</label>
-      <textarea id="address" rows="2" cols="40" name="address" for="address"></textarea>
-    </div>
-
-    <h2 class="gutter normal italic giga push-1-2">Mission statement</h2>
-
-    <div class="push gutter">
-      <label for="why-do-you-want-to-go-to-mars">Why do you want to go to Mars?</label>
-      <textarea id="why-do-you-want-to-go-to-mars" rows="2" cols="40" name="why-do-you-want-to-go-to-mars" for="message"></textarea>
-    </div>
-
-    <div class="push-1 gutter center">
-      <button class="btn" type="submit">Register for the trip!</button>
-    </div>
+    </fieldset>
 
     <input type="hidden" name="subject" value="Request to join the mission">
 
