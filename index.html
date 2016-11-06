@@ -12,34 +12,37 @@
 </head>
 <body>
 
-  <form action"https://formspree.io/sunt0005@algonquinlive.com" method="post">
+  <form class="max-length" action="https://formspree.io/sunt0005@algonquinlive.com" method="post">
 
     <h1>Want to go to Mars?</h1>
     <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     <h2>Personal details</h2>
 
-    <div>
-      <label for="name">Name</label>
-        <input id="name">
-    </div>
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-2 l-2 xl-2">
+        <label for="name">Name</label>
+          <input id="name">
+      </div>
 
-    <div>
-      <label for="age">Age</label>
-        <input id="age">
-    </div>
+      <div class="unit xs-1 s-1 m-2 l-2 xl-2">
+        <label for="age">Age</label>
+          <input id="age">
+      </div>
 
-    <div>
-      <label for="email">Email</label>
-        <input id="email">
-    </div>
+      <div class="unit xs-1 s-1 m-2 l-2 xl-2">
+        <label for="email">Email</label>
+          <input id="email">
+      </div>
 
-    <div>
-      <label for="physicalfitness">Physical Fitness</label>
-      <select id="physicalfitness">
-        <option>Super-human</option>
-        <option>Fit as a fiddle</option>
-        <option>A little couch-potato-y</option>
-      </select>
+      <div class="unit xs-1 s-1 m-2 l-2 xl-2">
+        <label for="physicalfitness">Physical fitness</label>
+        <select id="physicalfitness">
+          <option>Super-human</option>
+          <option>Fit as a fiddle</option>
+          <option>Not terribly strong</option>
+          <option>A little couch-potato-y</option>
+        </select>
+      </div>
     </div>
 
     <div>
@@ -56,7 +59,10 @@
 
     <button class="btn" type="submit">Register for the trip!</button>
 
-  Request to join the mission
+    <div>
+      <input id="message" value="Request to joing the mission">
+    </div>
+
 
   </form>
 
